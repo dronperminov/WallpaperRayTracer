@@ -29,26 +29,6 @@ class Tracer {
 
 	Vector background = Vector(0.0, 0.0, 0.0);
 
-	/*Material ivory = { 1.0, { 0.6, 0.3, 0.1, 0 }, Vector(0.4, 0.4, 0.3), 50 };
-	Material glass = { 1.4, { 0, 0.5, 0.1, 0.8 }, Vector(0.6, 0.7, 0.8), 125 };
-	Material red_rubber = { 1.0, { 0.9, 0.1, 0, 0 }, Vector(0.3, 0.1, 0.1), 10 };
-	Material mirror = { 1.0, { 0, 10, 0.8, 0 }, Vector(1, 1, 1), 1425 };
-
-	Material silver = { 0, { 0.6, 0.3, 0.1, 0.0 }, Vector(0.35, 0.35, 0.37), 10 };
-	Material bronze = { 0, { 0.4, 0.3, 0.1, 0.0 }, Vector(0.7, 0.4, 0.18), 10 };
-
-	Material red = { 1.0, { 1, 0.5, 0.2, 0 }, Vector(1, 0, 0), 500 };
-	Material blue = { 1.0, { 1, 0.5, 0.3, 0 }, Vector(0, 0, 1), 500 };
-	Material green = { 1.0, { 1, 0.5, 0.5, 0 }, Vector(0, 1, 0), 10 };
-	Material yellow = { 1.0, { 0.8, 10, 0.5, 0 }, Vector(1, 1, 0), 1000 };
-
-	Material simpleRed = { 1.0, { 1, 0, 0, 0 }, Vector(1, 0, 0), 0 };
-	Material simpleGreen = { 1.0, { 1, 0, 0, 0 }, Vector(0, 1, 0), 0 };
-	Material simpleBlue = { 1.0, { 1, 0, 0, 0 }, Vector(0, 0, 1), 0 };
-
-	Material blueMetall = { 0, { 0.8, 0.3, 0.5, 0.0 }, Vector(0.35, 0.35, 0.67), 10 };
-	Material blueMetall2 = { 1, { 1, 15, 0.2, 0.0 }, Vector(0.35, 0.35, 0.67), 500 };*/
-
 	int width; // ширина картинки
 	int height; // высота картинки
 
@@ -106,8 +86,8 @@ Tracer::Tracer(int width, int height) {
 		}
 	}
 
-	Vector camPos(0.3, 0.9135, -2.1313);
-	Vector camAngle(5.8, 6.1, 0);
+	Vector camPos(0, 0.9135, -2.1313);
+	Vector camAngle(5.8, 0, 0);
 
 	camera = Camera(camPos, camAngle); // создаём камеру
 }

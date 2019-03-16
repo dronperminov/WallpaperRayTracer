@@ -126,13 +126,13 @@ void Camera::Rotate(double x, double y) {
 // движение влево
 void Camera::Left(double movement) {
 	position.x -= cos(angle.y) * movement;
-	position.z -= sin(angle.y) * movement;
+	position.z += sin(angle.y) * movement;
 }
 
 // движение вправо
 void Camera::Right(double movement) {
 	position.x += cos(angle.y) * movement;
-	position.z += sin(angle.y) * movement;
+	position.z -= sin(angle.y) * movement;
 }
 
 // движение вверх
@@ -148,14 +148,14 @@ void Camera::Down(double movement) {
 // движение вперёд
 void Camera::Forward(double movement) {
 	position.y += sin(angle.x) * movement;
-	position.x += cos(angle.y + PI / 2) * cos(angle.x) * movement;
+	position.x -= cos(angle.y + PI / 2) * cos(angle.x) * movement;
 	position.z += sin(angle.y + PI / 2) * cos(angle.x) * movement;
 }
 
 // движение назад
 void Camera::Backward(double movement) {
 	position.y -= sin(angle.x) * movement;
-	position.x += cos(angle.y - PI / 2) * cos(angle.x) * movement;
+	position.x -= cos(angle.y - PI / 2) * cos(angle.x) * movement;
 	position.z += sin(angle.y - PI / 2) * cos(angle.x) * movement;
 }
 
